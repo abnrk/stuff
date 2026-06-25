@@ -1,0 +1,30 @@
+<html>
+<head>
+<hta:application id="pigtime" applicationname="PigTime" scroll="no">
+<title>PigTime</title>
+<script language="vbscript">
+Dim piggy
+Dim banban
+Dim jumbojosh
+Dim timer
+banban = 0
+jumbojosh = 0
+Sub pigster()
+piggy.style.top = (Sin((banban*5)/16)*50)+(500/3.5)
+piggy.style.left = (Sin(jumbojosh/5)*100)+(500/3.5)
+banban = banban + 1
+jumbojosh = jumbojosh + 1
+End Sub
+Sub onload()
+MsgBox "HACKING ALL YOUR FILES."
+Set piggy = document.getElementById("pig")
+piggy.src = "https://em-content.zobj.net/source/apple/354/pig-face_1f437.png"
+timer = setInterval("pigster",1000/60,"vbscript")
+End Sub
+window.resizeTo 500,500
+</script>
+</head>
+<body onload="onload">
+<img id="pig" src="" style="position:absolute;filter: hue-rotate(9rad);">
+</body>
+</html>

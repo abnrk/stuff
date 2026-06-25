@@ -1,0 +1,259 @@
+<html>
+<head>
+<hta:application id="penis" scroll="no">
+<script language="vbscript">
+Dim levels(49)
+levels(0) = "    #####n    #   #n    #$  #n  ###  $##n  #  $ $ #n### # ## #   ######n#   # ## #####  ..#n# $  $          ..#n##### ### #@##  ..#n    #     #########n    #######"
+levels(1) = "############n#..  #     ###n#..  # $  $  #n#..  #$####  #n#..    @ ##  #n#..  # #  $ ##n###### ##$ $ #n  # $  $ $ $ #n  #    #     #n  ############"
+levels(2) = "        ########n        #     @#n        # $#$ ##n        # $  $#n        ##$ $ #n######### $ # ###n#....  ## $  $  #n##...    $  $   #n#....  ##########n########"
+levels(3) = "           ########n           #  ....#n############  ....#n#    #  $ $   ....#n# $$$#$  $ #  ....#n#  $     $ #  ....#n# $$ #$ $ $########n#  $ #     #n## #########n#    #    ##n#     $   ##n#  $$#$$  @#n#    #    ##n###########"
+levels(4) = "        #####n        #   #####n        # #$##  #n        #     $ #n######### ###   #n#....  ## $  $###n#....    $ $$ ##n#....  ##$  $ @#n#########  $  ##n        # $ $  #n        ### ## #n          #    #n          ######"
+levels(5) = "######  ###n#..  # ##@##n#..  ###   #n#..     $$ #n#..  # # $ #n#..### # $ #n#### $ #$  #n   #  $# $ #n   # $  $  #n   #  ##   #n   #########"
+levels(6) = "       #####n #######   ##n## # @## $$ #n#    $      #n#  $  ###   #n### #####$###n# $  ### ..#n# $ $ $ ...#n#    ###...#n# $$ # #...#n#  ### #####n####"
+levels(7) = "  ####n  #  ###########n  #    $   $ $ #n  # $# $ #  $  #n  #  $ $  #    #n### $# #  #### #n#@#$ $ $  ##   #n#    $ #$#   # #n#   $    $ $ $ #n#####  #########n  #      #n  #      #n  #......#n  #......#n  #......#n  ########"
+levels(8) = "          #######n          #  ...#n      #####  ...#n      #      . .#n      #  ##  ...#n      ## ##  ...#n     ### ########n     # $$$ ##n #####  $ $ #####n##   #$ $   #   #n#@ $  $    $  $ #n###### $$ $ #####n     #      #n     ########"
+levels(9) = " ###  #############n##@####       #   #n# $$   $$  $ $ ...#n#  $$$#    $  #...#n# $   # $$ $$ #...#n###   #  $    #...#n#     # $ $ $ #...#n#    ###### ###...#n## #  #  $ $  #...#n#  ## # $$ $ $##..#n# ..# #  $      #.#n# ..# # $$$ $$$ #.#n##### #       # #.#n    # ######### #.#n    #           #.#n    ###############"
+levels(10) = "          ####n     #### #  #n   ### @###$ #n  ##      $  #n ##  $ $$## ##n #  #$##     #n # # $ $$ # ###n #   $ #  # $ #####n####    #  $$ #   #n#### ## $         #n#.    ###  ########n#.. ..# ####n#...#.#n#.....#n#######"
+levels(11) = "################n#              #n# # ######     #n# #  $ $ $ $#  #n# #   $@$   ## ##n# #  $ $ $###...#n# #   $ $  ##...#n# ###$$$ $ ##...#n#     # ## ##...#n#####   ## ##...#n    #####     ###n        #     #n        #######"
+levels(12) = "   #########n  ##   ##  #####n###     #  #    ###n#  $ #$ #  #  ... #n# # $#@$## # #.#. #n#  # #$  #    . . #n# $    $ # # #.#. #n#   ##  ##$ $ . . #n# $ #   #  #$#.#. #n## $  $   $  $... #n #$ ######    ##  #n #  #    ##########n ####"
+levels(13) = "       #######n #######     #n #     # $@$ #n #$$ #   #########n # ###......##   #n #   $......## # #n # ###......     #n##   #### ### #$##n#  #$   #  $  # #n#  $ $$$  # $## #n#   $ $ ###$$ # #n#####     $   # #n    ### ###   # #n      #     #   #n      ########  #n             ####"
+levels(14) = "   ########n   #   #  #n   #  $   #n ### #$   ####n #  $  ##$   #n #  # @ $ # $#n #  #      $ ####n ## ####$##     #n # $#.....# #   #n #  $..**. $# ###n##  #.....#   #n#   ### #######n# $$  #  #n#  #     #n######   #n     #####"
+levels(15) = "#####n#   ##n#    #  ####n# $  ####  #n#  $$ $   $#n###@ #$    ##n #  ##  $ $ ##n # $  ## ## .#n #  #$##$  #.#n ###   $..##.#n  #    #.*...#n  # $$ #.....#n  #  #########n  #  #n  ####"
+levels(16) = "   ##########n   #..  #   #n   #..      #n   #..  #  ####n  #######  #  ##n  #            #n  #  #  ##  #  #n#### ##  #### ##n#  $  ##### #  #n# # $  $  # $  #n# @$  $   #   ##n#### ## #######n   #    #n   ######"
+levels(17) = "     ###########n     #  .  #   #n     # #.    @ #n ##### ##..# ####n##  # ..###     ###n# $ #...   $ #  $ #n#    .. ##  ## ## #n####$##$# $ #   # #n  ## #    #$ $$ # #n  #  $ # #  # $## #n  #               #n  #  ###########  #n  ####         ####"
+levels(18) = "  ######n  #   @####n##### $   #n#   ##    ####n# $ #  ##    #n# $ #  ##### #n## $  $    # #n## $ $ ### # #n## #  $  # # #n## # #$#   # #n## ###   # # ######n#  $  #### # #....#n#    $    $   ..#.#n####$  $# $   ....#n#       #  ## ....#n###################"
+levels(19) = "    ##########n#####        ####n#     #   $  #@ #n# #######$####  ###n# #    ## #  #$ ..#n# # $     #  #  #.#n# # $  #     #$ ..#n# #  ### ##     #.#n# ###  #  #  #$ ..#n# #    #  ####  #.#n# #$   $  $  #$ ..#n#    $ # $ $ #  #.#n#### $###    #$ ..#n   #    $$ ###....#n   #      ## ######n   ########"
+levels(20) = "#########n#       #n#       ####n## #### #  #n## #@##    #n# $$$ $  $$#n#  # ## $  #n#  # ##  $ ####n####  $$$ $#  #n #   ##   ....#n # #   # #.. .#n #   # # ##...#n ##### $  #...#n     ##   #####n      #####"
+levels(21) = "######     ####n#    #######  #####n#   $#  #  $  #   #n#  $  $  $ # $ $  #n##$ $   # @# $    #n#  $ ########### ##n# #   #.......# $#n# ##  # ......#  #n# #   $........$ #n# # $ #.... ..#  #n#  $ $####$#### $#n# $   ### $   $  ##n# $     $ $  $    #n## ###### $ ##### #n#         #       #n###################"
+levels(22) = "    #######n    #  #  ####n##### $#$ #  ##n#.. #  #  #   #n#.. # $#$ #  $####n#.  #     #$  #  #n#..   $#  # $    #n#..@#  #$ #$  #  #n#.. # $#     $#  #n#.. #  #$$#$  #  ##n#.. # $#  #  $#$  #n#.. #  #  #   #   #n##. ####  #####   #n ####  ####   #####"
+levels(23) = "###############n#..........  .####n#..........$$.#  #n###########$ #   ##n#      $  $     $ #n## ####   #  $ #  #n#      #   ##  # ##n#  $#  # ##  ### ##n# $ #$###    ### ##n###  $ #  #  ### ##n###    $ ## #  # ##n # $  #  $  $ $   #n #  $  $#$$$  #   #n #  #  $      #####n # @##  #  #  #n ##############"
+levels(24) = "####n#  ##############n#  #   ..#......#n#  # # ##### ...#n##$#    ........#n#   ##$######  ####n# $ #     ######@ #n##$ # $   ######  #n#  $ #$$$##       #n#      #    #$#$###n# #### #$$$$$    #n# #    $     #   #n# #   ##        ###n# ######$###### $ #n#        #    #   #n##########    #####"
+levels(25) = " #######n #  #  #####n##  #  #...###n#  $#  #...  #n# $ #$$ ...  #n#  $#  #... .#n#   # $########n##$       $ $ #n##  #  $$ #   #n ######  ##$$@#n      #      ##n      ########"
+levels(26) = " #################n #...   #    #   ##n##.....  $## # #$ #n#......#  $  #    #n#......#  #  # #  #n######### $  $ $  #n  #     #$##$ ##$##n ##   $    # $    #n #  ## ### #  ##$ #n # $ $$     $  $  #n # $    $##$ ######n #######  @ ##n       ######"
+levels(27) = "         #####n     #####   #n    ## $  $  ####n##### $  $ $ ##.#n#       $$  ##..#n#  ###### ###.. #n## #  #    #... #n# $   #    #... #n#@ #$ ## ####...#n####  $ $$  ##..#n   ##  $ $  $...#n    # $$  $ #  .#n    #   $ $  ####n    ######   #n         #####"
+levels(28) = "#####n#   ##n# $  #########n## # #       ######n## #   $#$#@  #   #n#  #      $ #   $ #n#  ### ######### ##n#  ## ..*..... # ##n## ## *.*..*.* # ##n# $########## ##$ #n#  $   $  $    $  #n#  #   #   #   #  #n###################"
+levels(29) = "       ###########n       #   #     #n#####  #     $ $ #n#   ##### $## # ##n# $ ##   # ## $  #n# $  @$$ # ##$$$ #n## ###   # ##    #n## #   ### #####$#n## #     $  #....#n#  ### ## $ #....##n# $   $ #   #..$. #n#  ## $ #  ##.... #n#####   ######...##n    #####    #####"
+levels(30) = "  ####n  #  #########n ##  ##  #   #n #  $# $@$   ####n #$  $  # $ $#  ##n##  $## #$ $     #n#  #  # #   $$$  #n# $    $  $## ####n# $ $ #$#  #  #n##  ###  ###$ #n #  #....     #n ####......####n   #....####n   #...##n   #...#n   #####"
+levels(31) = "      ####n  #####  #n ##     $#n## $  ## ###n#@$ $ # $  #n#### ##   $#n #....#$ $ #n #....#   $#n #....  $$ ##n #... # $   #n ######$ $  #n      #   ###n      #$ ###n      #  #n      ####"
+levels(32) = "############n##     ##  #n##   $   $ #n#### ## $$ #n#   $ #    #n# $$$ # ####n#   # # $ ##n#  #  #  $ #n# $# $#    #n#   ..# ####n####.. $ #@#n#.....# $# #n##....#  $ #n###..##    #n############"
+levels(33) = " #########n #....   ##n #.#.#  $ ##n##....# # @##n# ....#  #  ##n#     #$ ##$ #n## ###  $    #n #$  $ $ $#  #n # #  $ $ ## #n #  ###  ##  #n #    ## ## ##n #  $ #  $  #n ###$ $   ###n   #  #####n   ####"
+levels(34) = "############ ######n#   #    # ###....#n#   $$#   @  .....#n#   # ###   # ....#n## ## ###  #  ....#n # $ $     # # ####n #  $ $##  #      #n#### #  #### # ## #n#  # #$   ## #    #n# $  $  # ## #   ##n# # $ $    # #   #n#  $ ## ## # #####n# $$     $$  #n## ## ### $  #n #    # #    #n ###### ######"
+levels(35) = "            #####n#####  ######   #n#   ####  $ $ $ #n# $   ## ## ##  ##n#   $ $     $  $ #n### $  ## ##     ##n  # ##### #####$$ #n ##$##### @##     #n # $  ###$### $  ##n # $  #   ###  ###n # $$ $ #   $$ #n #     #   ##  #n #######.. .###n    #.........#n    #.........#n    ###########"
+levels(36) = "###########n#......   #########n#......   #  ##   #n#..### $    $     #n#... $ $ #   ##   #n#...#$#####    #  #n###    #   #$  #$ #n  #  $$ $ $  $##  #n  #  $   #$#$ ##$ #n  ### ## #    ##  #n   #  $ $ ## ######n   #    $  $  #n   ##   # #   #n    #####@#####n        ###"
+levels(37) = "      ####n####### @#n#     $  #n#   $## $#n##$#...# #n # $...  #n # #. .# ##n #   # #$ #n #$  $    #n #  #######n ####"
+levels(38) = "             ######n #############....#n##   ##     ##....#n#  $$##  $ @##....#n#      $$ $#  ....#n#  $ ## $$ # # ...#n#  $ ## $  #  ....#n## ##### ### ##.###n##   $  $ ##   .  #n# $###  # ##### ###n#   $   #       #n#  $ #$ $ $###  #n# $$$# $   # ####n#    #  $$ #n######   ###n     #####"
+levels(39) = "    ############n    #          ##n    #  # #$$ $  #n    #$ #$#  ## @#n   ## ## # $ # ##n   #   $ #$  # #n   #   # $   # #n   ## $ $   ## #n   #  #  ##  $ #n   #    ## $$# #n######$$   #   #n#....#  ########n#.#... ##n#....   #n#....   #n#########"
+levels(40) = "           #####n          ##   ##n         ##     #n        ##  $$  #n       ## $$  $ #n       # $    $ #n####   #   $$ #####n#  ######## ##    #n#.            $$$@#n#.# ####### ##   ##n#.# #######. #$ $##n#........... #    #n##############  $ #n             ##  ##n              ####"
+levels(41) = "     ########n  ####      ######n  #    ## $ $   @#n  # ## ##$#$ $ $##n### ......#  $$ ##n#   ......#  #   #n# # ......#$  $  #n# #$...... $$# $ #n#   ### ###$  $ ##n###  $  $  $  $ #n  #  $  $  $  $ #n  ######   ######n       #####"
+levels(42) = "        #######n    #####  #  ####n    #   #   $    #n #### #$$ ## ##  #n##      # #  ## ###n#  ### $#$  $  $  #n#...    # ##  #   #n#...#    @ # ### ##n#...#  ###  $  $  #n######## ##   #   #n          #########"
+levels(43) = " #####n #   #n # # #######n #      $@######n # $ ##$ ###   #n # #### $    $ #n # ##### #  #$ ####n##  #### ##$      #n#  $#  $  # ## ## #n#         # #...# #n######  ###  ...  #n     #### # #...# #n          # ### # #n          #       #n          #########"
+levels(44) = "##### ####n#...# #  ####n#...###  $  #n#....## $  $###n##....##   $  #n###... ## $ $ #n# ##    #  $  #n#  ## # ### ####n# $ # #$  $    #n#  $ @ $    $  #n#   # $ $$ $ ###n#  ######  ###n# ##    ####n###"
+levels(45) = "##########n#        ####n# ###### #  ##n# # $ $ $  $ #n#       #$   #n###$  $$#  ###n  #  ## # $##n  ##$#   $ @#n   #  $ $ ###n   # #   $  #n   # ##   # #n  ##  ##### #n  #         #n  #.......###n  #.......#n  #########"
+levels(46) = "         ####n #########  ##n##  $      $ #####n#   ## ##   ##...#n# #$$ $ $$#$##...#n# #   @   #   ...#n#  $# ###$$   ...#n# $  $$  $ ##....#n###$       #######n  #  #######n  ####"
+levels(47) = "  #########  n  #*.*#*.*#  n  #.*.*.*.#  n  #*.*.*.*#  n  #.*.*.*.#  n  #*.*.*.*#  n  ###   ###  n    #   #    n###### ######n#           #n# $ $ $ $ $ #n## $ $ $ $ ##n #$ $ $ $ $# n #   $@$   # n #  #####  # n ####   ####"
+levels(48) = "       ####n       #  ##n       #   ##n       # $$ ##n     ###$  $ ##n  ####    $   #n###  # #####  #n#    # #....$ #n# #   $ ....# #n#  $ # #.*..# #n###  #### ### #n  #### @$  ##$##n     ### $     #n       #  ##   #n       ######### "
+levels(49) = "      ############n     ##..    #   #n    ##..* $    $ #n   ##..*.# # # $##n   #..*.# # # $  #n####...#  #    # #n#  ## #          #n# @$ $ ###  #   ##n# $   $   # #   #n###$$   # # # # #n  #   $   # # #####n  # $# #####      #n  #$   #   #    # #n  #  ###   ##     #n  #  #      #    ##n  ####      ######"
+</script>
+<script language="vbscript">
+tile0 = "data:image/bmp;base64,Qk32AAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////"
+tile1 = "data:image/bmp;base64,Qk32AAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAA////AAAA////////////////AAAA////////////AAAA////////AAAA////////////////////AAAAAAAA////////////////////////AAAAAAAA////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////AAAAAAAA////////////////////////AAAAAAAA////////////////////////////////////////////"
+tile2 = "data:image/bmp;base64,Qk32AAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAA////AAAAAAAAAAAA////AAAAAAAA////AAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAA////////////////////////////////AAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+tile3 = "data:image/bmp;base64,Qk32AAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAA////////AAAAAAAAAAAAAAAA////////AAAAAAAA////////////////AAAAAAAA////////AAAAAAAAAAAAAAAA////////AAAAAAAA////////////////AAAAAAAA////////AAAAAAAAAAAAAAAA////////AAAAAAAA////////////////AAAAAAAA////////AAAAAAAAAAAAAAAA////////AAAAAAAA////////"
+tile4 = "data:image/bmp;base64,Qk32AAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////AAAAAAAAAAAA////AAAA////////AAAA////AAAAAAAA////////AAAAAAAA////////AAAAAAAA////////AAAAAAAA////////AAAAAAAA////AAAA////////AAAA////AAAAAAAAAAAA////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+tile5 = "data:image/bmp;base64,Qk32AAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////////AAAAAAAAAAAAAAAA////////////AAAA////AAAAAAAA////AAAA////////AAAAAAAA////////AAAAAAAA////////AAAAAAAA////////AAAAAAAA////////AAAA////AAAAAAAA////AAAA////////////AAAAAAAAAAAAAAAA////////////////////////////////////////"
+tile6 = "data:image/bmp;base64,Qk32AAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAAAAAA////////////////////////AAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////"
+</script>
+<script language="none">
+level = 0
+px = 0
+py = 0
+boxesrequired = 0
+boxesin = 0
+Set chartiles = CreateObject("Scripting.Dictionary")
+charcolors.Add " ",tile0
+charcolors.Add "@",tile1
+charcolors.Add 8, "+"
+charcolors.Add 16, "#"
+charcolors.Add 45, "$"
+charcolors.Add 46, "*"
+charcolors.Add 3, "."
+
+Sub Auto_Close()
+ThisWorkbook.Saved = True
+End Sub
+
+Sub initcolors()
+charcolors.Add 0, " "
+charcolors.Add 5, "@"
+charcolors.Add 8, "+"
+charcolors.Add 16, "#"
+charcolors.Add 45, "$"
+charcolors.Add 46, "*"
+charcolors.Add 3, "."
+End Sub
+
+Sub reset()
+px = 0
+py = 0
+boxesrequired = 0
+boxesin = 0
+End Sub
+
+Sub loadlevel(n)
+Dim data As String
+Dim char As String
+Dim i As Integer
+Dim x As Integer
+Dim y As Integer
+Cells.Clear
+Cells.Interior.ColorIndex = 0
+reset
+data = levels.levels(n - 1)
+x = 1
+y = 1
+For i = 1 To Len(data)
+char = Mid(data, i, 1)
+If char <> "n" Then
+Cells(y, x).Value = char
+Cells(y, x).Interior.ColorIndex = charcolors.Item(char)
+Cells(y, x).Font.ColorIndex = charcolors.Item(char)
+If char = "$" Then boxesrequired = boxesrequired + 1
+If char = "*" Then boxesin = boxesin + 1
+If char = "@" Then
+px = x
+py = y
+End If
+x = x + 1
+Else
+y = y + 1
+x = 1
+End If
+Next
+End Sub
+
+Function move(x, y, ox, oy, Optional collide = True, Optional change = "", Optional leave = " ")
+Dim tile As String
+tile = Cells(1, 1).Value
+If change = "" Then change = tile
+If collide = True Then
+If (Cells(y + oy, x + ox).Value = "#") Or (Cells(y + oy, x + ox).Value = "$") Or (Cells(y + oy, x + ox).Value = "*") Then
+move = False
+Else
+Cells(y, x).Value = leave
+Cells(y, x).Interior.ColorIndex = charcolors.Item(leave)
+Cells(y, x).Font.ColorIndex = charcolors.Item(leave)
+Cells(y + oy, x + ox).Value = change
+Cells(y + oy, x + ox).Interior.ColorIndex = charcolors.Item(change)
+Cells(y + oy, x + ox).Font.ColorIndex = charcolors.Item(change)
+move = True
+End If
+Else
+Cells(y, x).Value = leave
+Cells(y, x).Interior.ColorValue = charcolors.Item(leave)
+Cells(y, x).Font.ColorValue = charcolors.Item(leave)
+Cells(y + oy, x + ox).Value = change
+Cells(y + oy, x + ox).Interior.ColorValue = charcolors.Item(change)
+Cells(y + oy, x + ox).Font.ColorValue = charcolors.Item(change)
+move = True
+End If
+End Function
+
+Sub movebox(x, y, ox, oy)
+Dim change As String
+Dim leave As String
+change = ""
+leave = " "
+If Cells(y + oy, x + ox) = "." Then change = "*"
+If (Cells(y + oy, x + ox) = ".") And (Cells(y, x) = "$") Then boxesin = boxesin + 1
+If Cells(y + oy, x + ox) = " " Then change = "$"
+If (Cells(y + oy, x + ox) = " ") And (Cells(y, x) = "*") And (boxesin > 0) Then boxesin = boxesin - 1
+If Cells(y, x) = "*" Then leave = "."
+move x, y, ox, oy, True, change, leave
+End Sub
+
+Sub moveplayer(ox, oy)
+Dim change As String
+Dim leave As String
+Dim r As Boolean
+change = ""
+leave = " "
+If Cells(py + oy, px + ox) = "." Then change = "+"
+If Cells(py + oy, px + ox) = " " Then change = "@"
+If Cells(py, px) = "+" Then leave = "."
+If Cells(py + oy, px + ox) = "*" Then change = "+"
+If Cells(py + oy, px + ox) = "$" Then change = "@"
+If (Cells(py + oy, px + ox) = "$") Or (Cells(py + oy, px + ox) = "*") Then movebox px + ox, py + oy, ox, oy
+r = move(px, py, ox, oy, True, change, leave)
+If r = True Then
+px = px + ox
+py = py + oy
+End If
+If boxesin = boxesrequired Then
+Dim answer As Integer
+MsgBox "Congratulations!"
+answer = MsgBox("Next level?", vbYesNo)
+If answer = vbYes Then
+level = level + 1
+loadlevel level
+End If
+End If
+End Sub
+
+Sub moveup()
+moveplayer 0, -1
+End Sub
+
+Sub movedown()
+moveplayer 0, 1
+End Sub
+
+Sub moveleft()
+moveplayer -1, 0
+End Sub
+
+Sub moveright()
+moveplayer 1, 0
+End Sub
+
+</script>
+<script language="vbscript">
+Dim playfield
+Sub keydown()
+MsgBox playfield
+End Sub
+Sub initplayfield()
+Set playfield = document.getElementById("playfield")
+For y=1 to height
+For x=1 to width
+Set img = document.createElement("img")
+img.setAttribute "id","cell"&x&","&y
+img.setAttribute "width","8"
+img.setAttribute "height","8"
+img.setAttribute "src",tile1
+img.style.position = "absolute"
+img.style.top = CStr((x-1)*8)
+img.style.left = CStr((y-1)*8)
+playfield.appendChild(img)
+Next
+Next
+End Sub
+
+Function Cells(y,x)
+Set Cells = document.getElementById("cell"&x&","&y)
+End Function
+
+Sub onload()
+initplayfield
+Cells(1,2).src = tile0
+End Sub
+
+width = 32
+height = 32
+window.resizeTo height*8,width*8
+</script>
+</head>
+<body onkeydown="keydown" onload="onload">
+<div id="playfield" style="position:fixed;top:0px">
+</div>
+</body>
+</html>
